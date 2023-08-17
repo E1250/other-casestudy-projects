@@ -71,38 +71,82 @@ docker image ls
 ```
 to run docker image
 ```cmd
-dodcker run image-name
+docker run image-name
 ```
 try this out - https://labs.play-with-docker.com/p/cjepcp8gftqg00flvcrg#cjepcp8g_cjepcqggftqg00flvcs0
 to use a docker image from docker hub
 ```cmd
 docker pull usename/docker_image_name
 ```
+## Linux Distros
+* Ubunity
+* Debian
+* Apline
+* Fedora
+* CentOS
+
+## Running Linux
+```cmd
+# Docker wll search about this image locally or docker will download it
+docker run ubuntu
+
+# Show running containers
+docker ps -a
+
+# Run and able to interact with, now you will see the shell
+docker run -it ubuntu
 
 
+```
+in shell
+```shell
+# Print hello
+echo hello
 
+whoami
 
+# Location of the shell program
+echo $0
 
+# Show history
+history
+```
 
+## Managing Packages
+* npm
+* yarn
+* pip
+* NuGet
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```cmd
+apt update
+apt list
+apt install package-name
+```
+## Linux File system
+![image](https://github.com/E1250/other-support-ref/assets/24204104/cb642290-ce68-41c1-86d7-bd27210ef0a5)
+> Use `Tab` for autofill
+```cmd
+pws  # Print working directory
+ls
+ls -l
+cd file-path
+cd ..    # go one level up
+cd ~   # Go to home directory
+mv from to  # Moving or renaming directory from to
+touch hello.txt file2.txt
+ls -1
+rm files.txt
+rm file*
+rm -r filename    # Remove directory
+mkdir dirname   # Creating directory
+cat filename  # show content of the file
+more filename
+head -n 5 filename
+tail -n 5 filename
+```
+## Redirection
+```cmd
+# write data from file1 to file2
+cat filename1 > filename2
+```
